@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class AuthController extends Controller
+class UserController extends Controller
 {
     public function login()
     {
@@ -14,7 +14,7 @@ class AuthController extends Controller
     public function loginPost(Request $request)
     {
         $credetials = [
-            'username' => $request->username,
+            'name' => $request->username,
             'password' => $request->password,
         ];
 
